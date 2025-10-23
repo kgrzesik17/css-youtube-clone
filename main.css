@@ -11,15 +11,34 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.2px solid #353535;
+  border-bottom: 0.2px solid #242424;
   padding: 0.5rem;
 }
 header .header__item {
-  color: white;
+  color: #fff;
 }
 header .header__item p {
   margin: 0;
   font-size: 1.3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+nav .nav-button {
+  background-color: #3b3b3b;
+  padding: 0.4rem 0.7rem;
+  font-family: inherit;
+  color: #fff;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+nav .nav-button__highlighted {
+  background-color: #fff;
+  color: #3b3b3b;
 }
 
 /*# sourceMappingURL=main.css.map */
