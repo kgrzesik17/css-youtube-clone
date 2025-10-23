@@ -1,3 +1,6 @@
 $colors: (bg: #0e0e0e, border: #242424, primary: #fff, secondary: #3b3b3b)
 
-$section-padding: 0.5rem
+$section-padding: 0.5rem 1rem
+
+@mixin divider() 
+    border-bottom: 0.2px solid map-get($colors, border)

@@ -12,7 +12,7 @@ body
 header
     display: flex
     justify-content: space-between
-    border-bottom: 0.2px solid map-get($colors, border)
+    @include divider()
     padding: $section-padding
 
     .header__item
@@ -26,6 +26,7 @@ nav
     display: flex
     justify-content: space-between
     padding: $section-padding 1rem
+    @include divider()
 
     .nav-button
         background-color: map-get($colors, secondary)
@@ -39,3 +40,61 @@ nav
     .nav-button__highlighted
         background-color: map-get($colors, primary)
         color: map-get($colors, secondary)
+
+    #nav-button__open-nav
+        border-radius: 0.1rem
+
+main
+    color: map-get($colors, primary)
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    padding: $section-padding 
+
+    .shorts__brand
+        display: flex
+        flex-direction: row
+        width: 100%
+        justify-content: space-between
+        padding: $section-padding
+
+        div p
+            margin: 0
+            font-weight: 900
+            font-size: 1.2rem
+
+    .shorts-content
+        padding: 0.5rem 0
+        display: grid
+        grid-template-areas: "a a" "a a"
+
+    .shorts-content__item
+        display: flex
+        flex-direction: column-reverse
+        margin: 0.2rem 0.2rem
+        height: 320px
+        width: 200px
+        border-radius: 0.5rem
+        justify-content: space-between
+
+        background-image: url("https://placehold.co/200x320")
+
+        .shorts-content__item__brand
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0))
+            align-self: flex-end
+            width: 100%
+            height: 6rem
+            display: flex
+            align-items: flex-end
+            
+            p
+                padding: 0 1rem
+                font-size: 0.9rem
+        
+        .shorts-content__item__context
+            p
+                margin: 0
+                float: right
+                padding: 0 1rem
+            

@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.2px solid #242424;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 header .header__item {
   color: #fff;
@@ -25,7 +25,8 @@ header .header__item p {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 1rem;
+  border-bottom: 0.2px solid #242424;
 }
 nav .nav-button {
   background-color: #3b3b3b;
@@ -39,6 +40,62 @@ nav .nav-button {
 nav .nav-button__highlighted {
   background-color: #fff;
   color: #3b3b3b;
+}
+nav #nav-button__open-nav {
+  border-radius: 0.1rem;
+}
+
+main {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+main .shorts__brand {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+main .shorts__brand div p {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+main .shorts-content {
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-areas: "a a" "a a";
+}
+main .shorts-content__item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0.2rem 0.2rem;
+  height: 320px;
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  background-image: url("https://placehold.co/200x320");
+}
+main .shorts-content__item .shorts-content__item__brand {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  align-self: flex-end;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: flex-end;
+}
+main .shorts-content__item .shorts-content__item__brand p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+main .shorts-content__item .shorts-content__item__context p {
+  margin: 0;
+  float: right;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
