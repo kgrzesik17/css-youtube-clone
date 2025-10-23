@@ -51,6 +51,7 @@ main
     justify-content: space-around
     align-items: center
     padding: $section-padding 
+    margin: 1rem 0
 
     .shorts__brand
         display: flex
@@ -69,32 +70,87 @@ main
         display: grid
         grid-template-areas: "a a" "a a"
 
-    .shorts-content__item
-        display: flex
-        flex-direction: column-reverse
-        margin: 0.2rem 0.2rem
-        height: 320px
-        width: 200px
-        border-radius: 0.5rem
-        justify-content: space-between
-
-        background-image: url("https://placehold.co/200x320")
-
-        .shorts-content__item__brand
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0))
-            align-self: flex-end
-            width: 100%
-            height: 6rem
+        .shorts-content__item
             display: flex
-            align-items: flex-end
+            flex-direction: column-reverse
+            margin: 0.2rem 0.2rem
+            height: 320px
+            width: 200px
+            border-radius: 0.5rem
+            justify-content: space-between
+            background-image: url("https://placehold.co/200x320")
+
+            .shorts-content__item__brand
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0))
+                align-self: flex-end
+                width: 100%
+                height: 6rem
+                display: flex
+                align-items: flex-end
+                
+                p
+                    padding: 0 1rem
+                    font-size: 0.9rem
             
-            p
-                padding: 0 1rem
-                font-size: 0.9rem
+            .shorts-content__item__context
+                p
+                    margin: 0
+                    float: right
+                    padding: 0 1rem
+            
+    .videos-content
+        margin: 0.5rem 0
+        .videos-content__item
+            .videos-content__item-image
+                display: flex
+                justify-content: flex-end
+                align-items: flex-end
+                width: 100vw
+                height: 100vw / 16 * 9
+                background-image: url("https://placehold.co/200x320")
+                background-repeat: no-repeat
+                background-size: cover
+                margin: 1rem 0
+
+                p
+                    margin: 0
+                    background-color: lighten(map-get($colors, bg), 20)
+                    font-size: 0.7rem
+                    padding: 0.2rem
+                    margin: 0.5rem
+                    border-radius: 15%
+
+        .videos-content__info
+            display: flex
+            // justify-content: space-between
+            align-items: center
+            padding: 0 1rem
+
+            .profile-photo
+                width: 50px
+                height: 50px
+                background-image: url("https://placehold.co/50x50")
+                border-radius: 50%
         
-        .shorts-content__item__context
-            p
-                margin: 0
-                float: right
+            .text-container
                 padding: 0 1rem
-            
+                max-width: 70%
+
+                p
+                    margin: 0
+
+                .video-title
+                    font-size: 0.9rem
+                
+                .video-info
+                    display: flex
+                    flex: 2 1 auto
+
+                    p
+                        padding: 0 0.2rem
+                        margin: 0
+                        font-size: 0.7rem
+                        color: darken(map-get($colors, primary), 40)
+
+            .video-context
+                margin-left: auto

@@ -52,6 +52,7 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem 1rem;
+  margin: 1rem 0;
 }
 main .shorts__brand {
   display: flex;
@@ -70,7 +71,7 @@ main .shorts-content {
   display: grid;
   grid-template-areas: "a a" "a a";
 }
-main .shorts-content__item {
+main .shorts-content .shorts-content__item {
   display: flex;
   flex-direction: column-reverse;
   margin: 0.2rem 0.2rem;
@@ -80,7 +81,7 @@ main .shorts-content__item {
   justify-content: space-between;
   background-image: url("https://placehold.co/200x320");
 }
-main .shorts-content__item .shorts-content__item__brand {
+main .shorts-content .shorts-content__item .shorts-content__item__brand {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   align-self: flex-end;
   width: 100%;
@@ -88,14 +89,70 @@ main .shorts-content__item .shorts-content__item__brand {
   display: flex;
   align-items: flex-end;
 }
-main .shorts-content__item .shorts-content__item__brand p {
+main .shorts-content .shorts-content__item .shorts-content__item__brand p {
   padding: 0 1rem;
   font-size: 0.9rem;
 }
-main .shorts-content__item .shorts-content__item__context p {
+main .shorts-content .shorts-content__item .shorts-content__item__context p {
   margin: 0;
   float: right;
   padding: 0 1rem;
+}
+main .videos-content {
+  margin: 0.5rem 0;
+}
+main .videos-content .videos-content__item .videos-content__item-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100vw;
+  height: 56.25vw;
+  background-image: url("https://placehold.co/200x320");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0;
+}
+main .videos-content .videos-content__item .videos-content__item-image p {
+  margin: 0;
+  background-color: #414141;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  margin: 0.5rem;
+  border-radius: 15%;
+}
+main .videos-content .videos-content__info {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+main .videos-content .videos-content__info .profile-photo {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://placehold.co/50x50");
+  border-radius: 50%;
+}
+main .videos-content .videos-content__info .text-container {
+  padding: 0 1rem;
+  max-width: 70%;
+}
+main .videos-content .videos-content__info .text-container p {
+  margin: 0;
+}
+main .videos-content .videos-content__info .text-container .video-title {
+  font-size: 0.9rem;
+}
+main .videos-content .videos-content__info .text-container .video-info {
+  display: flex;
+  flex: 2 1 auto;
+}
+main .videos-content .videos-content__info .text-container .video-info p {
+  padding: 0 0.2rem;
+  margin: 0;
+  font-size: 0.7rem;
+  color: #999999;
+}
+main .videos-content .videos-content__info .video-context {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
