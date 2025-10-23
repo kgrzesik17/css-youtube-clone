@@ -20,6 +20,23 @@ header .header__item {
 header .header__item p {
   margin: 0;
   font-size: 1.3rem;
+  display: inline;
+}
+header .header__item img {
+  width: 2rem;
+}
+header .header__item div {
+  display: inline;
+}
+header .brand {
+  display: flex;
+  flex-direction: row;
+}
+header .brand img {
+  align-self: center;
+}
+header .brand p {
+  font-weight: 600;
 }
 
 nav {
