@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "_variables.sass"
+    
+body
+    margin: 0
+    background-color: map-get($colors, bg)
+    display: flex
+    flex-direction: column
+    font-family: "Noto Sans", sans-serif
+    font-weight: 400
+
+header
+    display: flex
+    justify-content: space-between
+    border-bottom: 0.2px solid map-get($colors, border)
+    padding: 0.5rem
+
+    .header__item
+        color: white
+
+        p
+            margin: 0
+            font-size: 1.3rem
