@@ -172,4 +172,33 @@ main .videos-content .videos-content__info .video-context {
   margin-left: auto;
 }
 
+@media (min-width: 600px) {
+  header .brand {
+    align-items: center;
+  }
+  header .brand svg {
+    color: white;
+    margin-right: 1rem;
+  }
+  header .search #search-input {
+    background: #0e0e0e;
+    border-radius: 2rem;
+    border: 1px solid rgb(76.5, 76.5, 76.5);
+    color: #fff;
+    padding: 0.7rem;
+    width: 30rem;
+  }
+  header .header__item {
+    width: 30%;
+  }
+  header .right p {
+    float: right;
+  }
+}
+@media (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

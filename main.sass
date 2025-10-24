@@ -171,3 +171,32 @@ main
 
             .video-context
                 margin-left: auto
+
+@media(min-width: $phone-breakpoint)
+    header
+        .brand
+            align-items: center
+            
+            svg
+                color: white
+                margin-right: 1rem
+
+        .search
+            #search-input
+                background: map-get($colors, bg)
+                border-radius: 2rem
+                border: 1px solid darken(map-get($colors, primary), 70)
+                color: map-get($colors, primary)
+                padding: 0.7rem
+                width: 30rem
+
+        .header__item
+            width: 30%
+
+        .right
+            p
+                float: right
+
+@media(max-width: $phone-breakpoint)
+    .pc
+        display: none
