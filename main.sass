@@ -1,6 +1,7 @@
+@use 'sass:color'
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "_variables.sass"
-    
+
 body
     margin: 0
     background-color: map-get($colors, bg)
@@ -185,7 +186,8 @@ main
             #search-input
                 background: map-get($colors, bg)
                 border-radius: 2rem
-                border: 1px solid darken(map-get($colors, primary), 70)
+                // border: 1px solid darken(map-get($colors, primary), 70)
+                border: 1px solid color.adjust(map-get($colors, primary), $lightness: -70%)
                 color: map-get($colors, primary)
                 padding: 0.7rem
                 width: 30rem
